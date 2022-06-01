@@ -48,7 +48,7 @@ function App() {
         <h1>My Recipes</h1>
 
         <form onSubmit={addRecipe}>
-          <label htmlFor='recipe-name'>Recipe Name</label>
+          <label htmlFor='recipe-name'>recipe-name</label>
           <input
             type='text'
             name='recipe-name'
@@ -56,7 +56,7 @@ function App() {
             value={recipes['recipe-name']}
             onChange={handleInput}
           />
-          <label htmlFor='recipe-instructions'>Recipe Instructions</label>
+          <label htmlFor='recipe-instructions'>recipe-instructions</label>
           <input
             type='text'
             name='recipe-instructions'
