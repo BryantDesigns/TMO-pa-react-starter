@@ -67,14 +67,11 @@ function App() {
           <button>Submit</button>
         </form>
 
-        {recipeList.map((recipe, index) => {
-          return (
-            <ul>
-              <li key={index}>Name: {recipe['recipe-name']}</li>
-              <li key={index}>Instructions: {recipe['recipe-instructions']}</li>
-            </ul>
-          );
-        })}
+        <ul>
+          {recipeList.map((recipe, index) => {
+            return <li key={index}>{recipe['recipe-name']}</li>;
+          })}
+        </ul>
         <p>{recipeList.length > 0 ? '' : 'There are no recipes to list.'}</p>
       </div>
     );
